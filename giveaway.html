@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/party-popper_1f389.png"/>
+        <title>
+            ribeata.xyz - giveaway countdown
+        </title>
+        <style>
+            body {
+                background-color: #101f1b;
+                text-align: center;
+            }
+            h1 {
+                color: #80f8de;
+                font-family: Consolas;
+            }
+            h2 {
+                color: #9cf7d4;
+                font-family: 'Consolas';
+            }
+            h3 {
+                color: #9cf7d4;
+                font-family: 'Consolas';
+            }
+            h4 {
+                color: #9cf7d4;
+                font-family: 'Consolas';
+            }
+            h5 {
+                color: #9cf7d4;
+                font-family: 'Consolas';
+            }
+
+            p {
+                color: #ebecec;
+                font-family: 'Consolas';
+            }
+
+            button {
+                height: 80px;
+                width: 105px;
+                height: 55px;
+                border-radius: 10px;
+                border: solid 3px;
+                margin-top: 3px;
+                margin-left: 1x;
+                margin-right: 1px;
+                background-color: #9cf7d4;
+                color:black;
+                font-family: 'Lucida Console';
+                cursor: pointer;
+                }
+                .dark-mode {
+                background-color: black;
+                color: white;
+                }
+        </style>
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+      
+        <br>
+
+        <h1 id="count">ribeata.xyz | getting giveawayID</h1>
+        
+        <br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <a href="https://thespeed.ribeata.xyz"><button style="background-color:#7937ff">the speed community</button></a>
+        <script>
+            const params = new URLSearchParams(window.location.search)
+            for (const param of params) {
+              console.log(params.get('id'))
+            }
+            if(params.get('id')) {
+            var countDownDate = params.get('id')
+            
+            var x = setInterval(function() {
+            
+              var now = new Date().getTime();
+                
+              var distance = countDownDate - now;
+                
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              document.getElementById("count").innerHTML = "🕐 Acest giveaway se va termina în " + days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("count").innerHTML = "🕚 Acest giveaway s-a terminat";
+              }
+            }, 1000);
+            }
+            else {
+            document.getElementById("count").innerHTML = "ribeata.xyz - invalid Giveaway ID"
+            }
+            </script>
+</html>
+
