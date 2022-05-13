@@ -1,104 +1,122 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/party-popper_1f389.png"/>
-        <title>
-            ribeata.xyz - giveaway countdown
-        </title>
-        <style>
-            body {
-                background-color: #101f1b;
-                text-align: center;
-            }
-            h1 {
-                color: #80f8de;
-                font-family: Consolas;
-            }
-            h2 {
-                color: #9cf7d4;
-                font-family: 'Consolas';
-            }
-            h3 {
-                color: #9cf7d4;
-                font-family: 'Consolas';
-            }
-            h4 {
-                color: #9cf7d4;
-                font-family: 'Consolas';
-            }
-            h5 {
-                color: #9cf7d4;
-                font-family: 'Consolas';
-            }
+<!DOCTYPE html>
+<html lang="en">
 
-            p {
-                color: #ebecec;
-                font-family: 'Consolas';
-            }
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-            button {
-                height: 80px;
-                width: 105px;
-                height: 55px;
-                border-radius: 10px;
-                border: solid 3px;
-                margin-top: 3px;
-                margin-left: 1x;
-                margin-right: 1px;
-                background-color: #9cf7d4;
-                color:black;
-                font-family: 'Lucida Console';
-                cursor: pointer;
-                }
-                .dark-mode {
-                background-color: black;
-                color: white;
-                }
-        </style>
-        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous">
-        </script>
-    </head>
-    <body>
-      
-        <br>
+  <title>ribeata.xyz - Giveaway</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <h1 id="count">ribeata.xyz | getting giveawayID</h1>
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="ribeata.xyz" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">ribeata.xyz</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.instagram.com/eduard.irm/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://discord.com/channels/@me/598769962139648020" target="_blank" class="discord"><i class="bx bxl-discord"></i></a>
+        </div>
+      </div>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>ribeata.xyz</h1>
+      <p>Made for fun</p><br><br><br><br><br><br><br><br><br><br><br>
+      <h4 id="count">🔁 Se verifică...</h4>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+   
+
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ribeata.xyz</span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.instagram.com/eduard.irm/">@eduard.irm</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+<script>
+    const params = new URLSearchParams(window.location.search)
+    for (const param of params) {
+      console.log(params.get('id'))
+    }
+    if(params.get('id')) {
+    var countDownDate = params.get('id')
+    
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
         
-        <br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <a href="https://thespeed.ribeata.xyz"><button style="background-color:#7937ff">the speed community</button></a>
-        <script>
-            const params = new URLSearchParams(window.location.search)
-            for (const param of params) {
-              console.log(params.get('id'))
-            }
-            if(params.get('id')) {
-            var countDownDate = params.get('id')
-            
-            var x = setInterval(function() {
-            
-              var now = new Date().getTime();
-                
-              var distance = countDownDate - now;
-                
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-              document.getElementById("count").innerHTML = "🕐 Acest giveaway se va termina în " + days + "d " + hours + "h "
-              + minutes + "m " + seconds + "s ";
-                
-              if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("count").innerHTML = "🕚 Acest giveaway s-a terminat";
-              }
-            }, 1000);
-            }
-            else {
-            document.getElementById("count").innerHTML = "ribeata.xyz - invalid Giveaway ID"
-            }
-            </script>
+      var distance = countDownDate - now;
+        
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("count").innerHTML = "🕐 Acest giveaway se va termina în " + days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("count").innerHTML = "🕚 Acest giveaway s-a terminat";
+      }
+    }, 1000);
+    }
+    else {
+    document.getElementById("count").innerHTML = "❌ MS error: invalid provided (<code>id=</code> is empty or incorrect)"
+    }
+    </script>
 </html>
-
