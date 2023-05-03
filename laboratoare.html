@@ -1,3 +1,13 @@
 <html>
-<body>a</body>
+<head>
+<script>
+function forceFullScreen()
+{
+    top.resizeTo(window.screen.availwidth, window.screen.availheight);
+    top.moveTo(0,0);
+}
+setTimeout("forceFullScreen()", 250);
+</script>
+</head>
+<body onLoad="forceFullScreen()">a</body>
 </html>
